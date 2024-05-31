@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./About.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-main">
+            <div class="nav-logo">
+                <img src="../wepik-linear-simple-the-medical-clinic-logo-20240205061541Ge78.png" alt="" width="100%">
+            </div>
+            <div class="nav-list" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../index.html">Home</a>
+                <a href="./About.html">About</a>
+                <a href="../DEPARTMENTS/Departments.html">Departments</a>
+                <a href="../EXPERTS/Experts.html">Experts</a>
+                <a href="../BLOG/Blog.html">Blog</a>
+                <a href="../CONTACT/Contact.html">Contact</a>
+            </div>
+            <div class="menu-btn" onclick="openNav()">
+                <i class="bi bi-menu-app"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <!-- <header>
+            <h1 class="container-5-mainDIV-heading">Our Hospital</h1>
+        </header> -->
+        <h3 class="container_mainDIV_heading">About</h3>
+        <h1 class="container-5-mainDIV-heading">Meet With Our About</h1>
+
+        <section id="about">
+            <div class="container">
+                <p>Welcome to Our Hospital! We are committed to providing exceptional healthcare services to our
+                    community. With state-of-the-art facilities and a dedicated team of medical professionals, we strive
+                    to deliver compassionate care tailored to meet the unique needs of each patient.</p>
+                <p>Our mission is to promote health and wellness, prevent illness, and provide advanced medical
+                    treatment in a safe and supportive environment. We prioritize patient satisfaction and continuously
+                    seek ways to improve our services and enhance the overall patient experience.</p>
+                <p>Thank you for choosing Our Hospital for your healthcare needs. We look forward to serving you and
+                    your family.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="container">
+                <div class="service">
+                    <img src="../IMAGES/502.jpg" alt="Service 3">
+                    <div class="service-card">
+                        <h3>Service 1</h3>
+                        <p>Descr>Our mission is to promote health and wellness, prevent illness, and provide advanced
+                            medical
+                            treatment in a safe and supportive environment. We prioritize patient satisfaction and
+                            continuously
+                            seek ways to improve our services and enhance the overall patient experience..</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="../IMAGES/3071.jpg" alt="Service 1">
+                    <div class="service-card">
+                        <h3>Service 1</h3>
+                        <p>>Our mission is to promote health and wellness, prevent illness, and provide advanced medical
+                            treatment in a safe and supportive environment. We prioritize patient satisfaction and
+                            continuously
+                            seek ways to improve our services and enhance the overall patient experience..</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="../IMAGES/2149726941.jpg" alt="Service 2">
+                    <div class="service-card">
+                        <h3>Service 1</h3>
+                        <p>>Our mission is to promote health and wellness, prevent illness, and provide advanced medical
+                            treatment in a safe and supportive environment. We prioritize patient satisfaction and
+                            continuously
+                            seek ways to improve our services and enhance the overall patient experience.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="../IMAGES/5969.jpg" alt="Service 2">
+                    <div class="service-card">
+                        <h3>Service 1</h3>
+                        <p>Our mission is to promote health and wellness, prevent illness, and provide advanced medical
+                            treatment in a safe and supportive environment. We prioritize patient satisfaction and
+                            continuously
+                            seek ways to improve our services and enhance the overall patient experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="main-footer">
+            <div class="footer-items">
+                <img src="../7725801-removebg-preview.png" alt="" width="200px">
+            </div>
+            <div class="footer-items-Link">
+                <h3>Quick Links</h3>
+                <a href=""><i class="bi bi-chevron-right"></i>Home</a>
+                <a href=""><i class="bi bi-chevron-right"></i>Appointment</a>
+                <a href=""><i class="bi bi-chevron-right"></i>Style Guide</a>
+                <a href=""><i class="bi bi-chevron-right"></i>Licenses</a>
+                <a href=""><i class="bi bi-chevron-right"></i>Changelog</a>
+            </div>
+            <div class="footer-items">
+                <h3>Opening Hours</h3>
+                <p>Mon-Tuss 08:00AM-05:00PM</p>
+                <p>web-Thu 09:00AM-06:00PM</p>
+                <p>Fri-Sat 08:00AM-05:00PM</p>
+                <p>Sunday Emergency Only</p>
+                <p>Parsonal Mon-05:00PM</p>
+
+            </div>
+            <div class="footer-items">
+                <h3>Contact</h3>
+                <p>82 New street .Ny 1013</p>
+                <p>+1500 321 854 789</p>
+            </div>
+        </div>
+        <hr>
+        <div class="worning">
+            <p>© Copyrights 2024 - 2025.Healtcare Medical Hospital </p>
+        </div>
+    </footer>
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
